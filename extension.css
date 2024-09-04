@@ -14,12 +14,23 @@
 }
 
 
-
+/* 
 [data-page-links*="c3-pdf-highlight"]>div>.rm-block-text {
   border: 3px solid rgb(255, 65, 65) !important;
   border-style: inset !important;
   border-radius: 10px;
   box-shadow: 5px 5px 3px #aaaaaa;
+} */
+
+[data-page-links*="c3-pdf-highlight"]>div>.rm-block-text {
+  background-color: rgba(173, 216, 230, 0.7) !important; /* 연한 파란색 배경 */
+  padding: 2px 4px; /* 약간의 패딩 추가 */
+  border-radius: 3px; /* 모서리를 살짝 둥글게 */
+  box-shadow: none !important; /* 그림자 제거 */
+  color: black !important; /* 텍스트 색상을 검정으로 유지 */
+  text-decoration: underline !important; /* 밑줄 추가 */
+  text-decoration-color: rgb(173, 216, 230) !important; /* 밑줄 색상을 배경색과 동일하게 */
+  text-underline-offset: 2px; /* 밑줄과 텍스트 사이 간격 */
 }
 
 .btn-ref-annotation {
@@ -84,10 +95,18 @@ span {
   box-shadow: none !important;
 }
 
+/* .btn-scrollto {
+  border-radius: 14px !important;
+  font-size: 12px !important;
+  font-weight: bold;
+} */
+
 .btn-scrollto {
   border-radius: 14px !important;
   font-size: 12px !important;
   font-weight: bold;
+  background-color: rgb(173, 216, 230) !important; /* 버튼 배경색도 같은 파란색으로 */
+  color: black !important; /* 버튼 텍스트 색상을 검정으로 */
 }
 
 /* Hide PDF Breadcrumb */
